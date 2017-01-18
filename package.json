@@ -1,0 +1,16 @@
+{
+  "name": "sequelize-relocate",
+  "version": "0.1.0",
+  "description": "A simple abstraction for Sequelize.js to relocate associated models if their parents ever were to be destroyed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "haha nope"
+  },
+  "keywords": [
+    "sequelize",
+    "ghost",
+    "relocate"
+  ],
+  "author": "T. Waterreus",
+  "license": "MIT"
+}
