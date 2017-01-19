@@ -1,10 +1,10 @@
 {
-  "name": "@awkward/sequelize-relocate",
+  "name": "@awkward/sequelize-reassociate",
   "version": "0.1.0",
-  "description": "A simple abstraction for Sequelize.js to relocate associated models if their parents ever were to be destroyed.",
+  "description": "A simple abstraction for Sequelize to reassociate a models associations if it ever were to be destroyed.",
   "main": "index.js",
   "scripts": {
-    "test": "haha nope"
+    "test": "echo not yet :sad_trombone:"
   },
   "keywords": [
     "sequelize",
