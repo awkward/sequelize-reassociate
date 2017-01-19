@@ -1,9 +1,13 @@
 {
   "name": "@awkward/sequelize-reassociate",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple abstraction for Sequelize to reassociate a models associations if it ever were to be destroyed.",
   "main": "index.js",
   "url": "https://github.com/awkward/sequelize-reassociate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awkward/sequelize-reassociate"
+  },
   "scripts": {
     "test": "echo not yet :sad_trombone:"
   },
