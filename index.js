@@ -2,10 +2,10 @@
 module.exports = function(db) {
   Object.keys(db.sequelize.models)
     .map(m => db.sequelize.model(m))
-    .filter(m => m.relocate instanceof Function)
+    .filter(m => m.reassociate instanceof Function)
     .map( model => {
 
-      let relocatees = model.relocate();
+      let relocatees = model.reassociate();
       let knownRelocatees = Object.keys(relocatees);
       let associates = Object.keys(model.associations);
 
