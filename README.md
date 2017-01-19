@@ -12,14 +12,14 @@ Sequelize-reassociate basically moves a models associations to a provided record
  ```
  
 2) Require the module:
-``` node
+``` javascript
  const reassociate = require('@awkward/sequelize-reassociate');
 ```
 
 3) Setup the module:
 in your `index.js` file (or wherever you initialize Sequelize) just call the function and pass in your initialized sequelize instance. Make sure the models already have been initialized at this point.
 
-``` node
+``` javascript
   // ..sequelize setting up code
  
   db.sequelize = sequelize;
@@ -31,7 +31,7 @@ in your `index.js` file (or wherever you initialize Sequelize) just call the fun
 4) Using the module:
 Now to use the module, let the models know where its associations can be moved to using a public method which returns an object:
 
-``` node
+``` javascript
 const User = sequelize.define('User', {
     // snip ...
   },
