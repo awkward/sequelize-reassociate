@@ -1,7 +1,7 @@
 'use strict';
-module.exports = function(db) {
-  Object.keys(db.sequelize.models)
-    .map(m => db.sequelize.model(m))
+module.exports = function(sequelize) {
+  Object.keys(sequelize.models)
+    .map(m => sequelize.model(m))
     .filter(m => m.reassociate instanceof Function)
     .map( model => {
 
@@ -25,7 +25,6 @@ module.exports = function(db) {
             relocation.where[association.foreignKey] = record.id;
 
             return association.target.update(relocation.value, {where: relocation.where});
-
           });
         });
     });
