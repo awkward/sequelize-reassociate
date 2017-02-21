@@ -9,7 +9,7 @@
     "url": "git+https://github.com/awkward/sequelize-reassociate"
   },
   "scripts": {
-    "test": "echo not yet :sad_trombone:"
+    "test": "ava test/*.test.js --watch"
   },
   "keywords": [
     "sequelize",
@@ -17,5 +17,11 @@
     "relocate"
   ],
   "author": "T. Waterreus",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.29.0",
+    "sqlite3": "^3.1.8"
+  }
 }
