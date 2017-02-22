@@ -9,7 +9,8 @@
     "url": "git+https://github.com/awkward/sequelize-reassociate"
   },
   "scripts": {
-    "test": "ava test/*.test.js --watch"
+    "test": "ava test/*.test.js",
+    "watch": "ava test/*.test.js --watch"
   },
   "keywords": [
     "sequelize",
